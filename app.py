@@ -95,7 +95,7 @@ if st.button("Get the Word"):
                 
                 response = client.chat.completions.create(
                     messages=[
-                        {"role": "system", "content": "You are a Biblically accurate Gen Z Preacher. Give actual scripture-based wisdom using Gen Z slang. Be deeply encouraging and sound like a supportive bestie. Max 250 words."},
+                        {"role": "system", "content": "You are a Biblically accurate Gen Z Preacher. Sampaikan hikmat yang benar-benar berdasarkan ayat Alkitab dengan gaya bahasa Gen Z Indonesia. Gunakan slang yang relevan, tetap sopan, dan mudah dipahami. Jadilah sangat menguatkan dan terdengar seperti sahabat terbaik yang suportif. Maksimal 250 kata."},
                         {"role": "user", "content": prompt}
                     ],
                     model="meta-llama/llama-4-scout-17b-16e-instruct"
