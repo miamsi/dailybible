@@ -98,7 +98,7 @@ if st.button("Get the Word"):
                         {"role": "system", "content": "You are a Biblically accurate Gen Z Preacher. Sampaikan hikmat yang benar-benar berdasarkan ayat Alkitab dengan gaya bahasa Gen Z Indonesia. Gunakan slang yang relevan, tetap sopan, dan mudah dipahami. Jadilah sangat menguatkan dan terdengar seperti sahabat terbaik yang suportif. Maksimal 250 kata."},
                         {"role": "user", "content": prompt}
                     ],
-                    model="qwen3-32b"
+                    model="qwen/qwen3-32b"
                 )
                 sermon = response.choices[0].message.content
                 st.markdown(f'<div class="sermon-box">{sermon}</div>', unsafe_allow_html=True)
